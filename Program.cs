@@ -9,6 +9,9 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+app.Urls.Add("http://localhost:3000");
+app.Urls.Add("https://localhost:3001");
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
